@@ -56,7 +56,7 @@ This project implements the **Single Producer and Single Consumer** problem usin
 
   You can compile both the producer and consumer using gcc:
   
-     ```bash
+  
                   
                 gcc -o producer producer.c -lpthread
                 gcc -o consumer consumer.c -lpthread
@@ -82,18 +82,18 @@ The output will show the producer adding items to the buffer and the consumer re
 
 Producer Terminal Output:
   
-     ```bash
+    
             [Producer]: Produced item 1 to buffer at position 0
             [Producer]: Produced item 2 to buffer at position 1
-            ...
+            
 
 
 Consumer Terminal Output:
 
-     ```bash
+    
     [Consumer]: Consumed item 1 from buffer at position 0
     [Consumer]: Consumed item 2 from buffer at position 1
-    ...
+    
 
 
 Termination
