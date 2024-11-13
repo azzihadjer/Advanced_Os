@@ -1,7 +1,8 @@
 
 #include "shared.h"
 
-void init_semaphores(key_t key) {
+void init_semaphores() {
+    key_t key =1234;
     semid = semget(key, 3, IPC_CREAT | 0666);
     if (semid == -1) {
         perror("semget failed");
@@ -69,7 +70,7 @@ int main() {
     shm_ptr->in = 0;
     shm_ptr->out = 0;
 
-    init_semaphores(key);
+    init_semaphores();
     producer();
 
     shmdt(shm_ptr);

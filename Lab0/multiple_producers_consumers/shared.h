@@ -17,6 +17,7 @@ struct shared_memory {
     int in;                   
     int out;                 
     
+    sem_t full;
     sem_t empty;              
     pthread_mutex_t mutex;    //to protect buffer access
 };
