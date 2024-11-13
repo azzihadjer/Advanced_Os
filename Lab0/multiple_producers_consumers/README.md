@@ -38,18 +38,57 @@ The system consists of multiple producers and multiple consumers that share a si
    - **Semaphores** are used to control access to the buffer and to manage the count of available slots and items.
    - **Mutexes** ensure mutual exclusion when producers and consumers access the shared buffer concurrently.
 
+
 ## Build and Run Instructions
 
 1. **Clone the Repository:**
+   
    ```bash
    git clone https://github.com/azzihadjer/Advanced_Os.git
    cd Advanced_Os/Lab0/multiple_producers_consumers
 
-# Compile the Project
+2. **Compile the Project:**
+
 
   You can compile the project using `gcc`:
-  
-  ```bash
-  gcc -o producer producers.c shared.c -lpthread
-  gcc -o consumer consumers.c shared.c -lpthread
+     
+     ```bash
+     gcc -o producers_consumers producers.c consumers.c shared.c -lpthread
+    
+
+
+
+3.**Run the Producers and Consumers:**
+   
+   In separate terminal windows, run the producer and consumer processes. For example:
+         
+          ```bash
+         ./producers_consumers
+
+4.**Termination:**
+
+The program will continue running, with producers adding items to the buffer and consumers consuming them, until terminated manually.
+
+## Example Output
+If you were running multiple producers and consumers, the output might look something like this:
+
+       ```bash
+      [ Producer 140444637327360]: produced item 5 to post: 3
+      [ Producer 140444637420544]: produced item 7 to post: 4
+      [ Consumer 140444638169856]: consumed item 5 from post: 3
+      [ Consumer 140444638262144]: consumed item 7 from post: 4
+
+## License
+      This project is licensed under the MIT License. See the LICENSE file for details.
+      
+      
+      ---bash
+      
+      This **README.md** provides a comprehensive overview of the project, detailing how to set up, compile, run, and the potential future improvements. It also includes a section for licensing information.
+
+
+
+
+
+
 
