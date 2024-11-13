@@ -83,16 +83,33 @@ The output will show the producer adding items to the buffer and the consumer re
 Producer Terminal Output:
   
     
-            [Producer]: Produced item 1 to buffer at position 0
-            [Producer]: Produced item 2 to buffer at position 1
+            [Producer] Trying to produce item 1
+            [Producer] Found empty slot for item 1
+            [Producer] Writing item 1 to buffer position 0
+            [Producer] Item 1 produced and mutex released
+            [Producer] Signaled full slot for item 1
+            [Producer] Trying to produce item 2
+            [Producer] Found empty slot for item 2
+            [Producer] Writing item 2 to buffer position 1
+            [Producer] Item 2 produced and mutex released
+            [Producer] Signaled full slot for item 2
+            ...
+            [Producer] Production complete
             
 
 
 Consumer Terminal Output:
 
-    
-    [Consumer]: Consumed item 1 from buffer at position 0
-    [Consumer]: Consumed item 2 from buffer at position 1
+             [Consumer] Waiting for full slot
+            [Consumer] Found full slot
+            [Consumer] Consumed item 1 from position 0
+            [Consumer] Signaled empty slot for item 1
+            [Consumer] Waiting for full slot
+            [Consumer] Found full slot
+            [Consumer] Consumed item 2 from position 1
+            [Consumer] Signaled empty slot for item 2
+            ...
+            [Consumer] Consumption complete
     
 
 
