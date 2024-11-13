@@ -52,12 +52,7 @@ This project implements the **Single Producer and Single Consumer** problem usin
 
 ## Build and Run Instructions
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-repo/single-producer-consumer.git
-   cd single-producer-consumer
-
-2.**Compile the Producer and Consumer:**
+1.**Compile the Producer and Consumer:**
 
   You can compile both the producer and consumer using gcc:
   
@@ -67,7 +62,7 @@ This project implements the **Single Producer and Single Consumer** problem usin
                 gcc -o consumer consumer.c -lpthread
 
 
-3.**Run the Producer and Consumer:**
+2.**Run the Producer and Consumer:**
 
 Open two separate terminal windows to run the producer and consumer:
 
