@@ -100,7 +100,7 @@ Producer Terminal Output:
 
 Consumer Terminal Output:
 
-             [Consumer] Waiting for full slot
+            [Consumer] Waiting for full slot
             [Consumer] Found full slot
             [Consumer] Consumed item 1 from position 0
             [Consumer] Signaled empty slot for item 1
