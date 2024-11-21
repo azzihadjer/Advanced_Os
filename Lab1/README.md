@@ -124,6 +124,7 @@ Configure the kernel using the following commands:
 
 
 #### Select Kernel options 
+
 ![Select Kernel options](images/select-kernel-options.png)
 ![Select Kernel options](images/make-genneral.png)
 
