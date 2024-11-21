@@ -122,15 +122,15 @@ Configure the kernel using the following commands:
 
   ![bison  ](images/bison.png)
 
+
+#### Select Kernel options 
+![Select Kernel options](images/select-kernel-options.png)
+![Select Kernel options](images/make-genneral.png)
+
+
  #### Make menuconfig process
 
  ![Make menuconfig process](images/make-menuconfig-process.png)
-
-#### Select Kernel options 
-![Select Kernel options](images/make-menuconfig-process.png)
-
-
-
 
 
 
