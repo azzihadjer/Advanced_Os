@@ -29,7 +29,28 @@ Makefile: A simple makefile to compile the kernel module.
 
 ## Build Instructions
 1. Navigate to the directory containing the files
-2. Compile the module using the following command: ))))))))))
+   ![navigate to dir ](images/acc_path.png)
+
+2. Compile the module using the following command:
+    ![make command ](images/make.png)
+
+## Insert the Module into the Kernel
+1. Load the module: To insert the module into the kernel, run:
+2. Check kernel logs: After loading the module, check the kernel logs 
+    with the following command to see the output:
+    ![make command ](images/insmod.png)
+
+## Remove the Module from the Kernel
+1. Unload the module: To remove the module from the kernel, run:
+2. Check kernel logs: After removing the module, check the kernel logs 
+    again:
+    ![make command ](images/rmmod.png)
+
+
+   
+   
+
+
 
 
 
