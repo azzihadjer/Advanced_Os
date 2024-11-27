@@ -17,7 +17,7 @@ This is a simple example of a Linux kernel module (LKM) that demonstrates how to
 
 To install the necessary dependencies on a Debian-based system, run:
 
-       ```
+       
            sudo apt update
            sudo apt install build-essential linux-headers-$(uname -r)
 
