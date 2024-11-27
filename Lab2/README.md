@@ -34,16 +34,20 @@ Makefile: A simple makefile to compile the kernel module.
 2. Compile the module using the following command:
     ![make command ](images/make.png)
 
+   **This will create the lkm.ko kernel module file as showing in list.
+
 ## Insert the Module into the Kernel
-1. Load the module: To insert the module into the kernel, run:
+1. Load the module: To insert the module into the kernel, run: `sudo insmod lkm.ko`
 2. Check kernel logs: After loading the module, check the kernel logs 
-    with the following command to see the output:
+    with the following command to see the output:  `dmesg | tail
+`
     ![make command ](images/insmod.png)
 
 ## Remove the Module from the Kernel
-1. Unload the module: To remove the module from the kernel, run:
+1. Unload the module: To remove the module from the kernel, run:  `sudo rmmod lkm.ko`
 2. Check kernel logs: After removing the module, check the kernel logs 
-    again:
+    again:   `dmesg | tail
+`
     ![make command ](images/rmmod.png)
 
 
